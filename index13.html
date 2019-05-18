@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sub class</title>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+  <div id="app-141">
+    <my-component-141></my-component-141>
+  </div>
+  <script>
+  var MyComponent141 = Vue.extend({
+    template: '<strong>Hello!</strong>'
+  })
+  Vue.component('my-component-141', MyComponent141)
+  var app141 = new Vue({
+    el: '#app-141',
+  })
+  </script>
+
+</body>
+</html>

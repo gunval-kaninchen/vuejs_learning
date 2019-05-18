@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>model</title>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+    <div id="app-120">
+        <input v-model="message.name">
+        <div>Message: {{ message.age }}</div>
+      </div>
+      <script>
+      var app120 = new Vue({
+        el: '#app-120',
+        data: { 
+          message: {
+            name : 'kaninchen',
+            age : 30
+          }
+        }
+      })
+      </script>
+
+</body>
+</html>

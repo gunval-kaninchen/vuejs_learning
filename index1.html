@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -7,7 +8,10 @@
 </head>
 <body>
 
-<div id="app-1">{{ message }}</div>
+<div id="app-1">
+  <div v-text="message"></div>
+  <div>{{ message }}</div>
+</div>
 
 <script>
 var app1 = new Vue({

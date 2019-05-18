@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>if</title>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+    <div id="app-104">
+        <input type="checkbox" @click="change" checked>
+        <!-- タグそのものを削除 -->
+        <span v-if="seen">Hello!</span>
+        <span v-else>Bye!</span>
+      </div>
+      <script>
+      var app104 = new Vue({
+        el: '#app-104',
+        data: { seen: true },
+        methods: {
+          change: function(e) {
+            this.seen = e.target.checked
+          }
+        }
+      })
+      </script>
+
+</body>
+</html>
